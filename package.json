@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/index.scss:./styles/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraChiroussot/PROJET3_ohmyfood.git"
+  },
+  "author": "Laura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraChiroussot/PROJET3_ohmyfood/issues"
+  },
+  "homepage": "https://github.com/LauraChiroussot/PROJET3_ohmyfood#readme"
+}
