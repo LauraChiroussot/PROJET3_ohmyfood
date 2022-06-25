@@ -1,6 +1,24 @@
+*{
+    list-style: none;
+}
 body{
     background-color: rgb(127, 232, 255);
 }
-h1{
-    color: yellow; 
+button{
+    background-color: #ff79da;
+    border: none;
+   
+}
+.fa-hands-helping{
+    color: white;
+}
+.fa-utensils{
+    color: white;
+}
+.footer_welcom{
+    background-color: black;
+    color: white;
+}
+.footer_welcom, li{
+    color: white;
 }
