@@ -1,13 +1,57 @@
+/*---OHMYFOOD P3---*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*---règles communes---*/
+
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiaire: #99e2d0;
+$color-headband: rgb(222, 220, 220);
+$color-sign: rgb(232, 226, 226);  
 *{
     list-style: none;
 }
+
 body{
+    font-family: Roboto, sans-serif;
     background-color: rgb(127, 232, 255);
 }
+
+.page1{
+    background-color: rgb(247, 247, 204);
+}
+.page2{
+    background-color: rgb(168, 234, 140);
+}
+.page3{
+    background-color: rgb(245, 125, 125);
+}
+.page4{
+    background-color: rgb(223, 245, 78);
+}
+
+/*---en-tête---*/
+
+.logo_header{
+    background-color: white;
+
+}
 button{
-    background-color: #ff79da;
+    background-color:$color-secondary;
     border: none;
    
+}
+.project-search{
+    background-color: $color-headband;
+}
+.invit{
+    background-color: $color-sign;
+}
+.food_diner{
+    background-color: $color-sign;
+
 }
 .fa-hands-helping{
     color: white;
@@ -15,10 +59,17 @@ button{
 .fa-utensils{
     color: white;
 }
+
+/*---pied de page---*/
+
+.logo_footer{
+   background-color: white;
+}
+
 .footer_welcom{
     background-color: black;
     color: white;
 }
-.footer_welcom, li{
-    color: white;
+.footer_welcom li{
+    color: rgb(121, 26, 26);
 }

@@ -1,14 +1,53 @@
+@charset "UTF-8";
+/*---OHMYFOOD P3---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*---règles communes---*/
 * {
   list-style: none;
 }
 
 body {
+  font-family: Roboto, sans-serif;
   background-color: rgb(127, 232, 255);
+}
+
+.page1 {
+  background-color: rgb(247, 247, 204);
+}
+
+.page2 {
+  background-color: rgb(168, 234, 140);
+}
+
+.page3 {
+  background-color: rgb(245, 125, 125);
+}
+
+.page4 {
+  background-color: rgb(223, 245, 78);
+}
+
+/*---en-tête---*/
+.logo_header {
+  background-color: white;
 }
 
 button {
   background-color: #ff79da;
   border: none;
+}
+
+.project-search {
+  background-color: rgb(222, 220, 220);
+}
+
+.invit {
+  background-color: rgb(232, 226, 226);
+}
+
+.food_diner {
+  background-color: rgb(232, 226, 226);
 }
 
 .fa-hands-helping {
@@ -19,10 +58,18 @@ button {
   color: white;
 }
 
+/*---pied de page---*/
+.logo_footer {
+  background-color: white;
+}
+
 .footer_welcom {
   background-color: black;
   color: white;
 }
 
+.footer_welcom li {
+  color: rgb(121, 26, 26);
+}
 
 /*# sourceMappingURL=style.css.map */
