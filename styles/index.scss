@@ -1,5 +1,7 @@
-/*---OHMYFOOD P3---*/
 @charset "UTF-8";
+
+/*---OHMYFOOD P3---*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
@@ -9,67 +11,153 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiaire: #99e2d0;
 $color-headband: rgb(222, 220, 220);
-$color-sign: rgb(232, 226, 226);  
-*{
+$color-sign: rgb(232, 226, 226);
+
+* {
     list-style: none;
 }
 
-body{
+body {
     font-family: Roboto, sans-serif;
     background-color: rgb(127, 232, 255);
 }
 
-.page1{
+
+.page1 {
     background-color: rgb(247, 247, 204);
 }
-.page2{
+
+.page2 {
     background-color: rgb(168, 234, 140);
 }
-.page3{
+
+.page3 {
     background-color: rgb(245, 125, 125);
 }
-.page4{
+
+.page4 {
     background-color: rgb(223, 245, 78);
 }
 
+
+
+/*---restaurants accueil---*/
+
 /*---en-tête---*/
 
-.logo_header{
+.logo_header {
     background-color: white;
 
 }
-button{
-    background-color:$color-secondary;
+
+button {
+    background-color: $color-secondary;
     border: none;
-   
-}
-.project-search{
-    background-color: $color-headband;
-}
-.invit{
-    background-color: $color-sign;
-}
-.food_diner{
-    background-color: $color-sign;
 
 }
-.fa-hands-helping{
-    color: white;
+
+.project-search {
+    background-color: $color-headband;
 }
-.fa-utensils{
-    color: white;
+
+.invit {
+    background-color: $color-sign;
 }
+
+/*---présentation restaurants accueil---*/
+
+.food_diner {
+    background-color: $color-sign;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    gap: 2%;
+
+}
+
+.food_diner figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 95%;
+    height: 200px;
+    margin: 20px 5px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.food_diner img {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 255px;
+    height: 125px;
+    margin: 5px;
+    padding: 2px 2px 0 2px;
+    border-radius: 20px 20px 0 0;
+}
+
+.food_diner figcaption {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 235px;
+    padding-bottom: 5px;
+    margin: 2px 0 2px 18px;
+}
+
+
+
+
+/*---les 4 restaurants---*/
+
+/*---formulaire---*/
+
+.image_restaurant {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 255px;
+    height: 125px;
+}
+
+h1 {
+
+    font-family: Shrikhand;
+}
+
+
+
+
+/*---menus restaurants---*/
+
+.contenair_menu_card {
+    background-color: $color-sign;
+}
+
+
 
 /*---pied de page---*/
 
-.logo_footer{
-   background-color: white;
+.footer_welcom h1 {
+    color: white;
 }
 
-.footer_welcom{
+.footer_welcom {
     background-color: black;
     color: white;
 }
-.footer_welcom li{
+
+.fa-hands-helping {
+    color: white;
+}
+
+.fa-utensils {
+    color: white;
+}
+
+.footer_welcom li {
     color: rgb(121, 26, 26);
 }
