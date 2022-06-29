@@ -5,39 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-/*---règles communes---*/
+@import "./utils/&\ _variables.scss";
 
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiaire: #99e2d0;
-$color-headband: rgb(222, 220, 220);
-$color-sign: rgb(232, 226, 226);
+@import "./utils/&\ _fonctionnement.scss";
 
-* {
-    list-style: none;
-}
+@import "./base/&\ _police.scss";
 
-body {
-    font-family: Roboto, sans-serif;
-    background-color: rgb(127, 232, 255);
-}
+@import "./layout/&\ _footer.scss";
 
-
-.page1 {
-    background-color: rgb(247, 247, 204);
-}
-
-.page2 {
-    background-color: rgb(168, 234, 140);
-}
-
-.page3 {
-    background-color: rgb(245, 125, 125);
-}
-
-.page4 {
-    background-color: rgb(223, 245, 78);
-}
 
 
 
@@ -69,7 +44,7 @@ button {
 .food_diner {
     background-color: $color-sign;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     width: auto;
     gap: 2%;
@@ -81,8 +56,9 @@ button {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    width: 95%;
-    height: 200px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
     margin: 20px 5px 5px 5px;
     background-color: white;
     border-radius: 20px;
@@ -92,8 +68,8 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 255px;
-    height: 125px;
+    width: 480px;
+    height: 300px;
     margin: 5px;
     padding: 2px 2px 0 2px;
     border-radius: 20px 20px 0 0;
@@ -103,7 +79,7 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 235px;
+    width: 480px;
     padding-bottom: 5px;
     margin: 2px 0 2px 18px;
 }
@@ -123,10 +99,6 @@ button {
     height: 125px;
 }
 
-h1 {
-
-    font-family: Shrikhand;
-}
 
 
 
@@ -139,25 +111,11 @@ h1 {
 
 
 
-/*---pied de page---*/
 
-.footer_welcom h1 {
-    color: white;
-}
-
-.footer_welcom {
-    background-color: black;
-    color: white;
-}
-
-.fa-hands-helping {
-    color: white;
-}
-
-.fa-utensils {
-    color: white;
-}
-
-.footer_welcom li {
-    color: rgb(121, 26, 26);
+@media all and (max-width:500px)
+{
+    body{
+        width: auto;
+        margin: 0 auto;
+    }
 }

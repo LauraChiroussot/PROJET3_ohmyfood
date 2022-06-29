@@ -1,0 +1,25 @@
+.function{
+    display: flex;
+    flex-direction: column;
+}
+.choice1, .choice2, .choice3{
+    height: 50px;
+    width: max-content;
+    
+   /* padding: 0px 35px;*/
+    
+    padding-right: 20px;
+    border: #e9e3e3 2px solid;
+    border-left-style: none;
+    border-radius: 0px 25px 25px 0px;
+   
+    /*font-size: larger;*/
+    font-weight: bold;
+    background-color: rgb(102, 185, 240);
+}
+.number{
+    border: 2px solid burlywood;
+    border-radius: 100px 100px 100px 100px;
+    background-color: azure;
+   
+}
