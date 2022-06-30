@@ -3,8 +3,12 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiaire: #99e2d0;
-$color-headband: rgb(222, 220, 220);
-$color-sign: rgb(232, 226, 226);
+$color-medium-gray: rgb(233, 229, 229);
+$color-light-gray: rgb(251, 247, 247);
+$color-icon-gray: gray;
+$color-footer: rgb(60, 58, 58);
+$font-family-text: Roboto, sans-serif;
+$font-family-title: Shrikhand;
 
 * {
     list-style: none;
@@ -14,4 +18,5 @@ $color-sign: rgb(232, 226, 226);
 
 body {
     width: 500px;
+    font-family: $font-family-text;
 }

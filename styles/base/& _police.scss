@@ -1,9 +1,12 @@
 body {
-    font-family: Roboto, sans-serif;
-
+    font-family: $font-family-text;
 }
 
 h1 {
 
-    font-family: Shrikhand;
+    font-family: $font-family-title;
+}
+
+.footer_welcom h3 {
+    font-family: $font-family-title;
 }

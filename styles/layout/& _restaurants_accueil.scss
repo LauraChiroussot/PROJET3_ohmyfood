@@ -1,0 +1,79 @@
+.food_diner {
+    background-color: $color-light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    /*gap: 2%;*/
+
+}
+
+.food_diner h2{
+    margin: 40px 0 15px 30px;
+}
+
+.food_diner figure {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    border-radius: 25px 25px 25px 25px;
+   
+}
+
+.food_diner img {
+    display: flex;
+    overflow: hidden;
+    width: 450px;
+    height: 280px;
+    
+    
+   
+    
+}
+
+.food_diner figcaption {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 480px;
+    background-color: white;
+}
+
+.food_diner h4{
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    margin: 15px 0px 5px 10px;
+}
+
+.food_diner p{
+    color: black;
+    margin: 0 0 15px 10px;
+}
+
+.food_diner .fa-heart{
+    margin-left: 250px;
+}
+
+.la_palette_du_gout, .la_note_enchantee{
+    position: relative;
+    text-align: left;
+}
+
+.new_text{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+    text-align-last: center;
+    padding-top: 10px;
+    background-color: $color-tertiaire;
+}
+

@@ -11,30 +11,7 @@
 
 body {
   width: 500px;
-}
-
-.function {
-  display: flex;
-  flex-direction: column;
-}
-
-.choice1, .choice2, .choice3 {
-  height: 50px;
-  width: max-content;
-  /* padding: 0px 35px;*/
-  padding-right: 20px;
-  border: #e9e3e3 2px solid;
-  border-left-style: none;
-  border-radius: 0px 25px 25px 0px;
-  /*font-size: larger;*/
-  font-weight: bold;
-  background-color: rgb(102, 185, 240);
-}
-
-.number {
-  border: 2px solid burlywood;
-  border-radius: 100px 100px 100px 100px;
-  background-color: azure;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -45,14 +22,211 @@ h1 {
   font-family: Shrikhand;
 }
 
-/*---pied de page---*/
-.footer_welcom h1 {
+.footer_welcom h3 {
+  font-family: Shrikhand;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+}
+
+.function h2 {
+  margin-left: 30px;
+}
+
+.choice1, .choice2, .choice3 {
+  height: 40px;
+  width: 300px;
+  padding-top: 25px;
+  margin: 20px 0 20px 0;
+  padding-right: 20px;
+  border: #e9e3e3 2px solid;
+  border-left-style: none;
+  border-radius: 25px 25px 25px 25px;
+  text-align-last: center;
+  font-weight: bold;
+  font-size: small;
+  background-color: rgb(251, 247, 247);
+}
+
+.number {
+  /*border-radius: 50px;
+  /*min-width: 50px;
+  width: 100px;
+  height: 100px;*/
+  background-color: #9356dc;
   color: white;
 }
 
-.footer_welcom {
-  background-color: black;
+.fa-mobile-alt, .fa-list-ul {
+  color: gray;
+  font-size: 15px;
+  padding: 0 20px 0 20px;
+}
+
+.fa-store {
+  color: #9356dc;
+  font-size: 15px;
+  padding: 0 20px 0 20px;
+}
+
+.logo_header_welcom img {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  background-color: white;
+  width: 250px;
+  height: 60px;
+}
+
+.logo_header_food {
+  background-color: white;
+}
+
+.project-search {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(233, 229, 229);
+  font-size: larger;
+  font-weight: bolder;
+  border-top: 3px solid rgb(60, 58, 58);
+}
+
+.fa-map-marker-alt {
+  margin: 0 0 0 100px;
+  padding: 0 40px;
+}
+
+.invit h2 {
+  padding: 30px 100px 20px 100px;
+  text-align: center;
+}
+
+.invit p {
+  padding: 0px 50px 30px 50px;
+  text-align: center;
+}
+
+.invit {
+  display: block;
+  text-align-last: center;
+  margin-top: -23px;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  font-size: large;
+  background-color: rgb(251, 247, 247);
+}
+
+.invit button {
+  width: 280px;
+  height: 60px;
+  border-radius: 50px 50px 50px 50px;
   color: white;
+  font-size: large;
+}
+
+.food_diner {
+  background-color: rgb(251, 247, 247);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  /*gap: 2%;*/
+}
+
+.food_diner h2 {
+  margin: 40px 0 15px 30px;
+}
+
+.food_diner figure {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.food_diner img {
+  display: flex;
+  overflow: hidden;
+  width: 450px;
+  height: 280px;
+}
+
+.food_diner figcaption {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 480px;
+  background-color: white;
+}
+
+.food_diner h4 {
+  font-size: large;
+  font-weight: bolder;
+  color: black;
+  margin: 15px 0px 5px 10px;
+}
+
+.food_diner p {
+  color: black;
+  margin: 0 0 15px 10px;
+}
+
+.food_diner .fa-heart {
+  margin-left: 250px;
+}
+
+.la_palette_du_gout, .la_note_enchantee {
+  position: relative;
+  text-align: left;
+}
+
+.new_text {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  text-align-last: center;
+  padding-top: 10px;
+  background-color: #99e2d0;
+}
+
+.footer_welcom ul {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  height: 150px;
+}
+
+.footer_welcom h3 {
+  color: white;
+  padding: 30px 25px 0px 38px;
+}
+
+.footer_redirecting li a {
+  color: white;
+}
+
+.footer_redirecting li {
+  padding: 0 0 15px 0;
+}
+
+.footer_welcom {
+  background-color: rgb(60, 58, 58);
 }
 
 .fa-hands-helping {
@@ -65,72 +239,12 @@ h1 {
   padding: 0 15px 0 0;
 }
 
-.footer_welcom li {
-  color: rgb(121, 26, 26);
-}
-
-/*---restaurants accueil---*/
-/*---en-tête---*/
-.logo_header {
-  background-color: white;
-}
-
 button {
   background-color: #ff79da;
   border: none;
 }
 
-.project-search {
-  background-color: rgb(222, 220, 220);
-}
-
-.invit {
-  background-color: rgb(232, 226, 226);
-}
-
 /*---présentation restaurants accueil---*/
-.food_diner {
-  background-color: rgb(232, 226, 226);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: auto;
-  gap: 2%;
-}
-
-.food_diner figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  margin: 20px 5px 5px 5px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.food_diner img {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 480px;
-  height: 300px;
-  margin: 5px;
-  padding: 2px 2px 0 2px;
-  border-radius: 20px 20px 0 0;
-}
-
-.food_diner figcaption {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 480px;
-  padding-bottom: 5px;
-  margin: 2px 0 2px 18px;
-}
-
 /*---les 4 restaurants---*/
 /*---formulaire---*/
 .image_restaurant {
@@ -143,7 +257,7 @@ button {
 
 /*---menus restaurants---*/
 .contenair_menu_card {
-  background-color: rgb(232, 226, 226);
+  background-color: rgb(251, 247, 247);
 }
 
 @media all and (max-width: 500px) {

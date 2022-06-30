@@ -5,25 +5,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-@import "./utils/&\ _variables.scss";
+@import "./utils/&\ _variables.scss"; //laisser la variables en tête de liste
+
+@import "./base/&\ _police.scss";
 
 @import "./utils/&\ _fonctionnement.scss";
 
-@import "./base/&\ _police.scss";
+@import "./layout/&_head-header.scss";
+
+@import "./layout/&\ _formulaire_welcom";
+
+@import "./layout/&\ _restaurants_accueil.scss";
+
 
 @import "./layout/&\ _footer.scss";
 
 
 
 
-/*---restaurants accueil---*/
 
-/*---en-tête---*/
 
-.logo_header {
-    background-color: white;
-
-}
 
 button {
     background-color: $color-secondary;
@@ -31,58 +32,9 @@ button {
 
 }
 
-.project-search {
-    background-color: $color-headband;
-}
-
-.invit {
-    background-color: $color-sign;
-}
 
 /*---présentation restaurants accueil---*/
 
-.food_diner {
-    background-color: $color-sign;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    gap: 2%;
-
-}
-
-.food_diner figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    margin: 20px 5px 5px 5px;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.food_diner img {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 480px;
-    height: 300px;
-    margin: 5px;
-    padding: 2px 2px 0 2px;
-    border-radius: 20px 20px 0 0;
-}
-
-.food_diner figcaption {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 480px;
-    padding-bottom: 5px;
-    margin: 2px 0 2px 18px;
-}
 
 
 
@@ -106,7 +58,7 @@ button {
 /*---menus restaurants---*/
 
 .contenair_menu_card {
-    background-color: $color-sign;
+    background-color: $color-light-gray;
 }
 
 
