@@ -20,3 +20,8 @@ body {
     width: 500px;
     font-family: $font-family-text;
 }
+
+button {
+    background-color: $color-secondary;
+    border: none;
+}

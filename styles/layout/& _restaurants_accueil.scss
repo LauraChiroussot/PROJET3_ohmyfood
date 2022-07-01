@@ -8,7 +8,7 @@
 
 }
 
-.food_diner h2{
+.food_diner h2 {
     margin: 40px 0 15px 30px;
 }
 
@@ -20,7 +20,6 @@
     max-width: 450px;
     height: 100%;
     border-radius: 25px 25px 25px 25px;
-   
 }
 
 .food_diner img {
@@ -28,10 +27,6 @@
     overflow: hidden;
     width: 450px;
     height: 280px;
-    
-    
-   
-    
 }
 
 .food_diner figcaption {
@@ -42,28 +37,29 @@
     background-color: white;
 }
 
-.food_diner h4{
+.food_diner h4 {
     font-size: large;
     font-weight: bolder;
     color: black;
     margin: 15px 0px 5px 10px;
 }
 
-.food_diner p{
+.food_diner p {
     color: black;
     margin: 0 0 15px 10px;
 }
 
-.food_diner .fa-heart{
+.food_diner .fa-heart {
     margin-left: 250px;
 }
 
-.la_palette_du_gout, .la_note_enchantee{
+.la_palette_du_gout,
+.la_note_enchantee {
     position: relative;
     text-align: left;
 }
 
-.new_text{
+.new_text {
     position: absolute;
     top: 10%;
     left: 80%;
@@ -77,3 +73,6 @@
     background-color: $color-tertiaire;
 }
 
+.food_diner .new_text {
+    color: $color-primary; //nuance vert
+}

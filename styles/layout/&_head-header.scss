@@ -1,14 +1,27 @@
+/*--- logo restaurant accueil---*/
+
 .logo_header_welcom img {
     display: flex;
     margin: auto;
-    text-align: center;
+    /*text-align: center;*/
     width: 100%;
     max-width: 480px;
-    background-color: white;
+    /*background-color: white;*/
     width: 250px;
     height: 60px;
 }
 
-.logo_header_food {
-    background-color: white;
+/*--- logo restaurants food---*/
+
+.logo_header_food img {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /*text-align: center;*/
+    width: 100%;
+    max-width: 480px;
+    background-color: rgb(219, 223, 230);
+    width: 250px;
+    height: 60px;
 }
+

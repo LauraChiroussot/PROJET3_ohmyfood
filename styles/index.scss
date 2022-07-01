@@ -17,49 +17,11 @@
 
 @import "./layout/&\ _restaurants_accueil.scss";
 
+@import "./layout/&\ _restaurants_food.scss";
+
 
 @import "./layout/&\ _footer.scss";
 
-
-
-
-
-
-
-button {
-    background-color: $color-secondary;
-    border: none;
-
-}
-
-
-/*---présentation restaurants accueil---*/
-
-
-
-
-
-/*---les 4 restaurants---*/
-
-/*---formulaire---*/
-
-.image_restaurant {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 255px;
-    height: 125px;
-}
-
-
-
-
-
-/*---menus restaurants---*/
-
-.contenair_menu_card {
-    background-color: $color-light-gray;
-}
 
 
 
@@ -71,3 +33,11 @@ button {
         margin: 0 auto;
     }
 }
+
+
+
+
+
+
+
+
