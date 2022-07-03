@@ -1,28 +1,27 @@
 .function{
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    max-width: 1281px;
+    background-color: aqua;
 }
 
 .function h2{
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+    margin: 20px 0 0 30px
 }
 
-
 .choice1, .choice2, .choice3{
-    height: 40px;
-    width: 300px;
-    
-    padding-top: 25px;
-    margin: 20px 0 20px 0;
-    
+    height: 90px;
+  
+    /*width: 460px;*/
+    width: 1241px;
+    margin: 20px 0px 20px 10px;
     padding-right: 20px;
-    border: #e9e3e3 2px solid;
     border-left-style: none;
     border-radius: 25px 25px 25px 25px;
-    text-align-last: center;
     font-weight: bold;
-    font-size: small;
+    font-size: 26px;
     background-color: $color-light-gray;
 }
 .number{
@@ -35,14 +34,14 @@
 }
 .fa-mobile-alt, .fa-list-ul{
     color: $color-icon-gray;
-    font-size: 15px;
-    padding: 0 20px 0 20px;
+    font-size: 45px;
+    padding: 0 30px 0 30px;
 }
 
 .fa-store{
     color: $color-primary;
-    font-size: 15px;
-    padding: 0 20px 0 20px;
+    font-size: 50px;
+    padding: 0 30px 0 30px;
     
 
 }

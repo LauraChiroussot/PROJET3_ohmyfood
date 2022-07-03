@@ -25,14 +25,38 @@
 
 
 
+/*$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+%edged {
+    width: 100%;
+    margin: 0 auto;
 
-@media all and (max-width:500px)
+    @each $_key, $_value in $breakpoints {
+        @include media-min($_key) {
+            width: ($_value - 100px);
+        }
+    }
+}
+
+
+
 {
     body{
         width: auto;
         margin: 0 auto;
     }
-}
+}*/
 
 
 

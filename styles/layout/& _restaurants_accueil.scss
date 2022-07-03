@@ -2,14 +2,65 @@
     background-color: $color-light-gray;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 500px;
-    /*gap: 2%;*/
+    width: 100%;
+    /*max-width: 500px;*/
+    max-width: 1281px;
+    height: 1650px;
 
+    
+    @include desktop-only;
+    
+    @include desktop-only {
+        width: 100%;
+    }
+
+    @include tablette-only;
+
+    @include tablette-only {
+        width: 100%;
+    }
+
+    @include mobile-only;
+
+    @include mobile-only {
+        width: 100%;
+    }
 }
 
+.food_diner_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    overflow: hidden;
+    /*width: 460px;*/
+    width: 1241px;
+    background-color: #a441a1;
+    border-radius: 30px;
+
+  
+
+        @include desktop-only;
+    
+        @include desktop-only {
+            width: 100%;
+        }
+    
+        @include tablette-only;
+    
+        @include tablette-only {
+            width: 100%;
+        }
+    
+        @include mobile-only;
+    
+        @include mobile-only {
+            width: 100%;
+        }
+    }
+
+
 .food_diner h2 {
-    margin: 40px 0 15px 30px;
+    margin: 40px 0 15px 0px;
 }
 
 .food_diner figure {
@@ -17,24 +68,87 @@
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    max-width: 450px;
+    /*max-width: 460px;*/
+    max-width: 1241px;
     height: 100%;
+    margin-top: 15px;
     border-radius: 25px 25px 25px 25px;
+
+  
+
+        @include desktop-only;
+    
+        @include desktop-only {
+            width: 100%;
+        }
+    
+        @include tablette-only;
+    
+        @include tablette-only {
+            width: 100%;
+        }
+    
+        @include mobile-only;
+    
+        @include mobile-only {
+            width: 100%;
+        }
+    
 }
 
 .food_diner img {
     display: flex;
     overflow: hidden;
-    width: 450px;
+    /*width: 460px;*/
+    width: 1241px;
     height: 280px;
+
+    
+    @include desktop-only;
+    
+    @include desktop-only {
+        width: 100%;
+    }
+
+    @include tablette-only;
+
+    @include tablette-only {
+        width: 100%;
+    }
+
+    @include mobile-only;
+
+    @include mobile-only {
+        width: 100%;
+    }
 }
 
 .food_diner figcaption {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 480px;
+    /*width: 460px;*/
+    width: 1241px;
     background-color: white;
+
+    
+    @include desktop-only;
+    
+    @include desktop-only {
+        width: 100%;
+    }
+
+    @include tablette-only;
+
+    @include tablette-only {
+        width: 100%;
+    }
+
+    @include mobile-only;
+
+    @include mobile-only {
+        width: 100%;
+    }
 }
 
 .food_diner h4 {

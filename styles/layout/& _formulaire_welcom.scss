@@ -1,50 +1,48 @@
-.project-search {
-    display: flex;
-    justify-items: center;
-    width: 100%;
-    max-width: 500px;
-    background-color: $color-medium-gray;
-    font-size: larger;
-    font-weight: bolder;
-    border-top: 3px solid $color-footer; //mettre la couleur en gris dégradé
-}
 
-.fa-map-marker-alt {
-    margin: 0 0 0 100px;
-    padding: 0 40px;
+    .project-search {
+        /*display: block;*/
+        justify-items: center;
+        width: 100%;
+        /*max-width: 500px;*/
+        max-width: 1281px;
+        height: 70px;
+        padding-top: 20px;
+        font-size: larger;
+        font-weight: bolder;
+        border-top: 4px solid $color-icon-gray; //mettre la couleur en gris dégradé
+        background-color: $color-medium-gray;
+    }
 
-}
+    .fa-map-marker-alt {
+        margin: 0 0 0 100px;
+        padding: 0 40px;
 
-.invit h2 {
-    padding: 30px 100px 20px 100px;
-    text-align: center;
-}
+    }
 
-.invit p {
-    padding: 0px 50px 30px 50px;
-    text-align: center;
-}
+    .invit h2 {
+        padding: 60px 100px 20px 100px;
+        text-align: center;
+    }
 
-.invit {
-    display: block;
-    text-align-last: center;
-    margin-top: -23px;
-    width: 100%;
-    max-width: 500px;
-    height: 350px;
-    font-size: large;
-    background-color: $color-light-gray;
-}
+    .invit p {
+        padding: 0px 50px 30px 50px;
+        text-align: center;
+    }
 
-.invit button {
-    width: 280px;
-    height: 60px;
-    border-radius: 50px 50px 50px 50px;
-    color: white;
-    font-size: large;
+    .invit {
+        display: block;
+        /*text-align-last: center;*/
+        margin-top: -23px;
+        width: 100%;
+        /*max-width: 500px;*/
+        max-width: 1281px;
+        height: 350px;
+        font-size: large;
+        background-color: $color-light-gray;
+    }
 
-}
+    .invit button {
+        width: 280px;
+        margin-right: 100px;
 
-.invit button a {
-    color: white;
-}
+    }

@@ -5,74 +5,83 @@
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    max-width: 500px;
+    /*max-width: 500px;*/
+    max-width: 1261px;
     height: 250px;
     /*z-index: 0;*/
 }
 
 /*---menus restaurants---*/
 
+.contenair_menu_card section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /*max-width: 500px;*/
+    max-width: 1261px;
+    height: auto;
+}
+
 .contenair_menu_card {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    /*max-width: 496px;*/
+    max-width: 1277px;
     height: 150%;
     border: 2px solid transparent;
     border-radius: 80px 80px 0 0;
-    margin-top: -50px;
+    /*margin-top: -50px;*/
     background-color: $color-light-gray;
-    
-  
-    
+
+
+
     /*z-index: 1;*/
 }
-.contenair_menu_card section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    height: auto;
-}
 
-h1{
-    margin: 60px 0 30px 15px;
+
+/*h1{
+    margin: 60px 0 0 15px;
 }
 
 .fa-heart{
     margin-left: 110px;
-}
+}*/
 
-.contenair_menu_card figure{
+.contenair_menu_card figure {
 
     display: flex;
     flex-direction: column;
-    width: 480px;
-    max-width: 500px;
-    height: 100%;
+    width: 470px;
+    /*max-width: 500px;*/
+    max-width: 1281px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px 0 0 10px;
     border: 2px solid transparent;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: white;
 }
 
-.contenair_menu_card h2{
+.contenair_menu_card h2 {
+    margin-top: 40px;
     border-bottom: 4px solid $color-tertiaire;
     width: 50px;
-    
-    
 }
 
+.contenair_menu_card figcaption {
+    display: flex;
+    justify-content: space-around;
+}
 
-button{
+/*.food_menu_price{
+    margin-left: 100px;
+}*/
+
+
+button {
     width: 220px;
-    height: 60px;
-    border-radius: 50px 50px 50px 50px;
-    color: white;
-    font-size: large;
     margin: 40px 0px 40px 120px;
 }
-
-
-
-
-

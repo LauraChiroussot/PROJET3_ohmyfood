@@ -10,18 +10,93 @@ $color-footer: rgb(60, 58, 58);
 $font-family-text: Roboto, sans-serif;
 $font-family-title: Shrikhand;
 
+/*$breakpoints: (
+    desktop: 1281px
+);
+
+$breakpoints: (
+    tablette: 961px
+);
+
+$breakpoints: (
+    mobile: 500px
+);*/
+
+$breakpoints: (
+    "mobile": 500px,
+    "tablette": 961px,
+    "desktop": 1281px,
+    
+);
+
+
+
+@mixin desktop-only {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        width: 100%;
+        @content;
+    }
+}
+
+@mixin tablette-only {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        width: 100%;
+        @content;
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        width: 100%;
+        @content;
+    }
+}
+
+//dimensions standard desktop 1281px ; tablette 961px ; moble 481px    
+
+
+//mobile pour mon écran ce sera 500px) 
+
+
 * {
     list-style: none;
     text-decoration: none;
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    width: 500px;
+    width: auto;
     font-family: $font-family-text;
+
+    @include desktop-only;
+
+    @include desktop-only {
+        width: 100%;
+    }
+
+    @include tablette-only;
+
+    @include tablette-only {
+        width: 100%;
+    }
+
+    @include mobile-only;
+
+    @include mobile-only {
+        width: 100%;
+    }
 }
 
+
+
 button {
+
+    height: 60px;
+    border-radius: 50px 50px 50px 50px;
+    color: white;
+    font-size: large;
     background-color: $color-secondary;
     border: none;
 }
