@@ -1,47 +1,86 @@
-.function{
+.function {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1281px;
-    background-color: aqua;
+    max-width: 500px;
+    /*background-color: aqua;*/
 }
 
-.function h2{
-    /*margin-left: 30px;*/
-    margin: 20px 0 0 30px
+.function h2 {
+    margin: 40px 0 30px 20px;
 }
 
-.choice1, .choice2, .choice3{
-    height: 90px;
-  
-    /*width: 460px;*/
-    width: 1241px;
-    margin: 20px 0px 20px 10px;
-    padding-right: 20px;
+.function ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 450px;
+    gap: 40px;
+}
+
+.choice1,
+.choice2,
+.choice3 {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 100px;
+    gap: 20px;
     border-left-style: none;
     border-radius: 25px 25px 25px 25px;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     background-color: $color-light-gray;
+    box-shadow: 5px 5px 5px 10px $color-medium-gray;
 }
-.number{
-    /*border-radius: 50px;
-    /*min-width: 50px;
-    width: 100px;
-    height: 100px;*/
-    background-color: $color-primary;
-    color: white; 
+
+.choice1:hover {
+    background-color: $color-light-blue;
+    transition: 0.3s;
 }
-.fa-mobile-alt, .fa-list-ul{
+
+.choice2:hover {
+    background-color: $color-light-blue;
+    transition: 0.3s;
+}
+
+.choice3:hover {
+    background-color: $color-light-blue;
+    transition: 0.4s;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: $color-primary-purple;
+    color: white;
+}
+
+.fa-mobile-alt {
+    display: flex;
+    justify-content: center;
     color: $color-icon-gray;
-    font-size: 45px;
+    font-size: 40px;
     padding: 0 30px 0 30px;
 }
 
-.fa-store{
-    color: $color-primary;
-    font-size: 50px;
+.fa-list-ul {
+    display: flex;
+    justify-content: center;
+    color: $color-icon-gray;
+    font-size: 30px;
     padding: 0 30px 0 30px;
-    
+}
 
+.fa-store {
+    display: flex;
+    justify-content: center;
+    color: $color-primary-purple;
+    font-size: 30px;
+    padding: 0 30px 0 30px;
 }

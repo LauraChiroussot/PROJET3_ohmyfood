@@ -1,56 +1,18 @@
 /*---en-tête---*/
 
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiaire: #99e2d0;
-$color-medium-gray: rgb(233, 229, 229);
-$color-light-gray: rgb(251, 247, 247);
-$color-icon-gray: gray;
+$color-primary-purple: #9356dc;
+$color-secondary-pink: #ff79da;
+$color-secondary-light-pink: pink;
+$color-tertiaire-green: #99e2d0;
+$color-tertiaire-bold-green: green;
+$color-light-blue: rgb(227, 228, 250);
+$color-medium-gray: rgb(234, 231, 231);
+$color-light-gray: rgb(241, 244, 244);
+$color-icon-gray: rgb(172, 169, 169);
 $color-footer: rgb(60, 58, 58);
 $font-family-text: Roboto, sans-serif;
 $font-family-title: Shrikhand;
 
-/*$breakpoints: (
-    desktop: 1281px
-);
-
-$breakpoints: (
-    tablette: 961px
-);
-
-$breakpoints: (
-    mobile: 500px
-);*/
-
-$breakpoints: (
-    "mobile": 500px,
-    "tablette": 961px,
-    "desktop": 1281px,
-    
-);
-
-
-
-@mixin desktop-only {
-    @media screen and (max-width: map-get($breakpoints, desktop)) {
-        width: 100%;
-        @content;
-    }
-}
-
-@mixin tablette-only {
-    @media screen and (max-width: map-get($breakpoints, tablette)) {
-        width: 100%;
-        @content;
-    }
-}
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
-        width: 100%;
-        @content;
-    }
-}
 
 //dimensions standard desktop 1281px ; tablette 961px ; moble 481px    
 
@@ -67,36 +29,19 @@ $breakpoints: (
 }
 
 body {
-    width: auto;
+    width: 500px;
+    margin-left: 100px;
+    border: 2px solid blue;
+    justify-content: center;
     font-family: $font-family-text;
-
-    @include desktop-only;
-
-    @include desktop-only {
-        width: 100%;
-    }
-
-    @include tablette-only;
-
-    @include tablette-only {
-        width: 100%;
-    }
-
-    @include mobile-only;
-
-    @include mobile-only {
-        width: 100%;
-    }
 }
-
-
 
 button {
 
-    height: 60px;
+    height: 65px;
     border-radius: 50px 50px 50px 50px;
     color: white;
     font-size: large;
-    background-color: $color-secondary;
+    background: linear-gradient($color-secondary-pink, $color-primary-purple);
     border: none;
 }

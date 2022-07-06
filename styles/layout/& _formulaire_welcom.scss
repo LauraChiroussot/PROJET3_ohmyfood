@@ -1,48 +1,42 @@
+.project-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    padding-top: 20px;
+    font-size: larger;
+    font-weight: bolder;
+  
+    border-top: 4px solid linear-gradient($color-secondary-pink, $color-primary-purple); //mettre la couleur en gris dégradé
+    background-color: $color-medium-gray;
+}
 
-    .project-search {
-        /*display: block;*/
-        justify-items: center;
-        width: 100%;
-        /*max-width: 500px;*/
-        max-width: 1281px;
-        height: 70px;
-        padding-top: 20px;
-        font-size: larger;
-        font-weight: bolder;
-        border-top: 4px solid $color-icon-gray; //mettre la couleur en gris dégradé
-        background-color: $color-medium-gray;
-    }
+.fa-map-marker-alt {
+    padding: 0 20px;
+}
 
-    .fa-map-marker-alt {
-        margin: 0 0 0 100px;
-        padding: 0 40px;
+.invit h2 {
+    padding: 30px 100px 20px 100px;
+}
 
-    }
+.invit p {
+    padding: 0px 50px 10px 50px;
+}
 
-    .invit h2 {
-        padding: 60px 100px 20px 100px;
-        text-align: center;
-    }
+.invit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: $color-light-gray;
+}
 
-    .invit p {
-        padding: 0px 50px 30px 50px;
-        text-align: center;
-    }
-
-    .invit {
-        display: block;
-        /*text-align-last: center;*/
-        margin-top: -23px;
-        width: 100%;
-        /*max-width: 500px;*/
-        max-width: 1281px;
-        height: 350px;
-        font-size: large;
-        background-color: $color-light-gray;
-    }
-
-    .invit button {
-        width: 280px;
-        margin-right: 100px;
-
-    }
+.invit button {
+    width: 280px;
+}

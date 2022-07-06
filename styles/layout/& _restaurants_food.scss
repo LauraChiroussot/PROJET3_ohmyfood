@@ -5,57 +5,63 @@
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    /*max-width: 500px;*/
-    max-width: 1261px;
-    height: 250px;
-    /*z-index: 0;*/
+    max-width: 500px;
+    height: 400px;
+    z-index: 0;
 }
 
 /*---menus restaurants---*/
+
+.restaurant_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px 50px 0 20px;
+}
+
+.restaurant_name h1{
+  
+  font-size: 600;
+  letter-spacing: 4px;
+}
+
+.contenair_menu_card .restaurant_name .fa-heart:hover{
+    background: none; 
+}
+
+.contenair_menu_card .restaurant_name .fa-heart{
+    background-color: none;
+}
 
 .contenair_menu_card section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    /*max-width: 500px;*/
-    max-width: 1261px;
+    max-width: 500px;
     height: auto;
 }
 
 .contenair_menu_card {
     display: flex;
     flex-direction: column;
+    margin-top: -120px;
     width: 100%;
-    /*max-width: 496px;*/
-    max-width: 1277px;
-    height: 150%;
+    max-width: 496px;
+    height: 1450px;
     border: 2px solid transparent;
-    border-radius: 80px 80px 0 0;
-    /*margin-top: -50px;*/
+    border-radius: 55px 55px 0 0;
     background-color: $color-light-gray;
-
-
-
-    /*z-index: 1;*/
+    z-index: 1;
+    position: relative;
 }
-
-
-/*h1{
-    margin: 60px 0 0 15px;
-}
-
-.fa-heart{
-    margin-left: 110px;
-}*/
 
 .contenair_menu_card figure {
 
     display: flex;
     flex-direction: column;
     width: 470px;
-    /*max-width: 500px;*/
-    max-width: 1281px;
+    max-width: 500px;
     height: 80px;
     margin-top: 20px;
     margin-left: 10px;
@@ -66,8 +72,8 @@
 }
 
 .contenair_menu_card h2 {
-    margin-top: 40px;
-    border-bottom: 4px solid $color-tertiaire;
+    margin: 40px 20px 0 20px;
+    border-bottom: 4px solid $color-tertiaire-green;
     width: 50px;
 }
 

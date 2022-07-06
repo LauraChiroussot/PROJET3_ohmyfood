@@ -9,25 +9,30 @@
 
 /*---logo restaurants food---*/
 
-.logo_header_food img {
+.logo_header_food{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin: 30px 0 30px 20px;
-    /*text-align: center;*/
+    justify-items: center;
     width: 100%;
-    /*max-width: 480px;*/
-    max-width: 1261px;
-    background-color: rgb(219, 223, 230);
-    width: 250px;
-    height: 60px;
+    max-width: 480px;
+    margin: 30px 30px 30px 20px;  
+}
+
+.fa-arrow-left{
+    margin: 15px 0px 0px 20px;
+    font-size: 25px;
+}
+
+.logo_header_food img {
+    width: 200px;
+    height: 50px;
+    margin-right: 150px;
+    
 }
 
 /*---restaurants name---*/
 
 .restaurant-name {
     display: flex;
-
     justify-content: space-around;
-
 }

@@ -1,30 +1,12 @@
 .food_diner {
-    background-color: $color-light-gray;
+
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*max-width: 500px;*/
-    max-width: 1281px;
-    height: 1650px;
-
-    
-    @include desktop-only;
-    
-    @include desktop-only {
-        width: 100%;
-    }
-
-    @include tablette-only;
-
-    @include tablette-only {
-        width: 100%;
-    }
-
-    @include mobile-only;
-
-    @include mobile-only {
-        width: 100%;
-    }
+    max-width: 500px;
+    height: 1800px;
+    margin-top: 100px;
+    background-color: $color-light-gray;
 }
 
 .food_diner_list {
@@ -32,32 +14,11 @@
     flex-direction: column;
     margin-left: 20px;
     overflow: hidden;
-    /*width: 460px;*/
-    width: 1241px;
-    background-color: #a441a1;
+    width: 460px;
+    gap: 30px;
+    /*background-color: #327a69;*/
     border-radius: 30px;
-
-  
-
-        @include desktop-only;
-    
-        @include desktop-only {
-            width: 100%;
-        }
-    
-        @include tablette-only;
-    
-        @include tablette-only {
-            width: 100%;
-        }
-    
-        @include mobile-only;
-    
-        @include mobile-only {
-            width: 100%;
-        }
-    }
-
+}
 
 .food_diner h2 {
     margin: 40px 0 15px 0px;
@@ -68,88 +29,36 @@
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    /*max-width: 460px;*/
-    max-width: 1241px;
-    height: 100%;
-    margin-top: 15px;
+    max-width: 460px;
+    /*height: 100%;*/
+    /*margin-top: 15px;*/
     border-radius: 25px 25px 25px 25px;
-
-  
-
-        @include desktop-only;
-    
-        @include desktop-only {
-            width: 100%;
-        }
-    
-        @include tablette-only;
-    
-        @include tablette-only {
-            width: 100%;
-        }
-    
-        @include mobile-only;
-    
-        @include mobile-only {
-            width: 100%;
-        }
-    
 }
 
 .food_diner img {
     display: flex;
     overflow: hidden;
-    /*width: 460px;*/
-    width: 1241px;
+    width: 460px;
     height: 280px;
+}
 
-    
-    @include desktop-only;
-    
-    @include desktop-only {
-        width: 100%;
-    }
+.food_diner figcaption .restaurant_name_accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px 50px 0px 0;
 
-    @include tablette-only;
-
-    @include tablette-only {
-        width: 100%;
-    }
-
-    @include mobile-only;
-
-    @include mobile-only {
-        width: 100%;
-    }
 }
 
 .food_diner figcaption {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    /*width: 460px;*/
-    width: 1241px;
+    /*display: flex;
+    /*flex-direction: column;
+    overflow: hidden;*/
+    width: 460px;
     background-color: white;
-
-    
-    @include desktop-only;
-    
-    @include desktop-only {
-        width: 100%;
-    }
-
-    @include tablette-only;
-
-    @include tablette-only {
-        width: 100%;
-    }
-
-    @include mobile-only;
-
-    @include mobile-only {
-        width: 100%;
-    }
 }
+
+
 
 .food_diner h4 {
     font-size: large;
@@ -163,9 +72,16 @@
     margin: 0 0 15px 10px;
 }
 
-.food_diner .fa-heart {
-    margin-left: 250px;
+.fa-heart {
+    font-size: 30px;
 }
+
+.fa-heart:hover {
+    transition: 0.5s;
+    background: linear-gradient($color-primary-purple, $color-secondary-pink);
+}
+
+
 
 .la_palette_du_gout,
 .la_note_enchantee {
@@ -184,9 +100,9 @@
     height: 30px;
     text-align-last: center;
     padding-top: 10px;
-    background-color: $color-tertiaire;
+    background-color: $color-tertiaire-green;
 }
 
 .food_diner .new_text {
-    color: $color-primary; //nuance vert
+    color: $color-tertiaire-bold-green;
 }
