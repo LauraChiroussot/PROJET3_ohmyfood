@@ -12,43 +12,26 @@
 
 /*---menus restaurants---*/
 
-.restaurant_name{
+.restaurant_name {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin: 20px 50px 0 20px;
 }
 
-.restaurant_name h1{
-  
-  font-size: 600;
-  letter-spacing: 4px;
-}
-
-.contenair_menu_card .restaurant_name .fa-heart:hover{
-    background: none; 
-}
-
-.contenair_menu_card .restaurant_name .fa-heart{
-    background-color: none;
-}
-
-.contenair_menu_card section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+.restaurant_name h1 {
+    font-size: 600;
+    letter-spacing: 4px;
 }
 
 .contenair_menu_card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: -120px;
     width: 100%;
     max-width: 496px;
-    height: 1450px;
+    height: 1550px;
     border: 2px solid transparent;
     border-radius: 55px 55px 0 0;
     background-color: $color-light-gray;
@@ -56,38 +39,202 @@
     position: relative;
 }
 
-.contenair_menu_card figure {
-
+.contenair_menu_card_la_note_enchante {
     display: flex;
     flex-direction: column;
-    width: 470px;
+    justify-content: center;
+    margin-top: -120px;
+    width: 100%;
+    max-width: 496px;
+    height: 1650px;
+    border: 2px solid transparent;
+    border-radius: 55px 55px 0 0;
+    background-color: $color-light-gray;
+    z-index: 1;
+    position: relative;
+}
+
+.contenair_menu_card figure,
+.contenair_menu_card_la_note_enchante figure {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
     max-width: 500px;
-    height: 80px;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 5px 0 0 10px;
+    height: 75px;
+    margin: 20px 10px 20px 10px;
+    padding: 15px 0 0 10px;
     border: 2px solid transparent;
     border-radius: 20px;
     background-color: white;
 }
 
-.contenair_menu_card h2 {
+.contenair_menu_card h2,
+.contenair_menu_card_la_note_enchante h2 {
     margin: 40px 20px 0 20px;
     border-bottom: 4px solid $color-tertiaire-green;
+    padding-bottom: 10px;
     width: 50px;
 }
 
-.contenair_menu_card figcaption {
+.contenair_menu_card .menu_price,
+.contenair_menu_card_la_note_enchante .menu_price {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px 50px 0px 0;
 }
-
-/*.food_menu_price{
-    margin-left: 100px;
-}*/
-
 
 button {
     width: 220px;
     margin: 40px 0px 40px 120px;
+}
+
+//---tablette 960px---
+
+@media all and (min-width: 960px) {
+    .image_restaurant {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        max-width: 960px;
+        height: 400px;
+        z-index: none;
+    }
+
+    .contenair_menu_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+        max-width: 960px;
+        height: 1760px;
+        border: 2px solid transparent;
+        border-radius: 15px 15px 0 0;
+        background-color: $color-light-gray;
+        z-index: none;
+        position: none;
+    }
+
+    .contenair_menu_card_la_note_enchante {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+        max-width: 960px;
+        height: 1900px;
+        border: 2px solid transparent;
+        border-radius: 15px 15px 0 0;
+        background-color: $color-light-gray;
+        z-index: none;
+        position: none;
+    }
+
+    .restaurant_name {
+        margin: 30px 50px 0 20px;
+    }
+
+    .restaurant_name h1 {
+        font-size: xx-large;
+    }
+
+    .contenair_menu_card figure,
+    .contenair_menu_card_la_note_enchante figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 700px;
+        max-width: 700px;
+        height: 100px;
+    }
+
+    .contenair_menu_card h2,
+    .contenair_menu_card_la_note_enchante h2 {
+        font-weight: bolder;
+    }
+
+    .contenair_menu_card h3,
+    .contenair_menu_card_la_note_enchante h3 {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .contenair_menu_card .menu_price,
+    .contenair_menu_card_la_note_enchante .menu_price {
+        margin: 10px 80px 0px 20px;
+        font-size: large;
+    }
+
+    button {
+        width: 500px;
+        margin: 40px 0px 40px 110px;
+        font-size: xx-large;
+        letter-spacing: 4px;
+    }
+}
+
+//---desktop 1280px---
+
+@media all and (min-width: 1280px) {
+    .image_restaurant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1100px;
+        margin-left: 80px;
+        box-shadow: 5px 5px 5px 55px;
+        opacity: 85%;
+        border-radius: 7px;
+        height: 400px;
+        z-index: none;
+    }
+
+    .contenair_menu_card {
+        margin-top: 0;
+        width: 100%;
+        max-width: 1280px;
+        height: 1750px;
+        border: 2px solid transparent;
+        border-radius: 0;
+        background-color: $color-light-gray;
+        z-index: none;
+        position: none;
+    }
+
+    .contenair_menu_card_la_note_enchante {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+        width: 100%;
+        max-width: 1280px;
+        height: 1900px;
+        border: 2px solid transparent;
+        border-radius: 0;
+        background-color: $color-light-gray;
+        z-index: none;
+        position: none;
+    }
+
+    .contenair_menu_card figure,
+    .contenair_menu_card_la_note_enchante figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 900px;
+        max-width: 900px;
+        height: 100px;
+    }
+    
+    button {
+        width: 700px;
+        margin: 40px 0px 40px 110px;
+        font-size: xx-large;
+        letter-spacing: 4px;
+    }
 }

@@ -7,21 +7,20 @@
     padding-top: 20px;
     font-size: larger;
     font-weight: bolder;
-  
-    border-top: 4px solid linear-gradient($color-secondary-pink, $color-primary-purple); //mettre la couleur en gris dégradé
+    border-top: 4px solid $color-icon-gray; //mettre la couleur en gris dégradé
     background-color: $color-medium-gray;
 }
 
 .fa-map-marker-alt {
-    padding: 0 20px;
+    padding: 0 20px 0 0;
 }
 
 .invit h2 {
-    padding: 30px 100px 20px 100px;
+    padding: 30px 80px 20px 100px;
 }
 
 .invit p {
-    padding: 0px 50px 10px 50px;
+    padding: 0px 30px 10px 50px;
 }
 
 .invit {
@@ -39,4 +38,103 @@
 
 .invit button {
     width: 280px;
+    margin-left: 110px;
+}
+
+//---tablette 960px---
+
+@media all and (min-width: 960px) {
+    .formulaire_accueil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 960px;
+        max-width: 960px;
+        height: 100%;
+        background-color: $color-secondary-pink;
+    }
+
+    .project-search {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 960px;
+        height: 40px;
+        padding-top: 20px;
+        font-size: xx-large;
+        font-weight: bolder;
+        border-top: 4px solid $color-icon-gray; //mettre la couleur en gris dégradé
+        border-bottom: 4px solid $color-light-gray;
+        text-shadow: black;
+    }
+
+    .invit p {
+        padding: 0px 50px 10px 50px;
+    }
+
+    .invit {
+        max-width: 960px;
+        height: 300px;
+        font-size: 20px;
+        background-color: $color-light-gray;
+    }
+
+    .invit button {
+        width: 400px;
+        height: 80px;
+        font-size: x-large;
+        font-weight: 700;
+        letter-spacing: 2px;
+        opacity: 80%;
+        margin-left: 280px;
+    }
+}
+
+//---desktop 1280px---
+
+@media all and (min-width: 1280px) {
+    .formulaire_accueil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1280px;
+        max-width: 1280px;
+        height: 100%;
+        background-color: $color-secondary-pink;
+    }
+    
+    .project-search {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 1280px;
+        height: 40px;
+        padding-top: 10px;
+        font-size: xx-large;
+        font-weight: bolder;
+        border-top: 4px solid $color-icon-gray; //mettre la couleur en gris dégradé
+        background-color: $color-medium-gray;
+        text-shadow: black;
+    }
+
+    .invit p {
+        padding: 0px 50px 10px 50px;
+    }
+
+    .invit {
+        max-width: 1280px;
+        height: 300px;
+        font-size: 30px;
+        background-color: $color-light-gray;
+    }
+
+    .invit button {
+        width: 600px;
+        height: 100px;
+        font-size: x-large;
+        font-weight: 900;
+        letter-spacing: 3px;
+        opacity: 80%;
+        margin-left: 340px;
+    }
 }
