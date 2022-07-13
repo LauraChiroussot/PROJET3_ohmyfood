@@ -1,3 +1,4 @@
+
 .food_diner {
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    width: 100%;
+    /*width: 100%;*/
     max-width: 430px;
     margin: 0 0 20px 0;
     border-radius: 25px 25px 25px 25px;
@@ -46,7 +47,6 @@
     justify-content: space-between;
     align-items: baseline;
     margin: 10px 50px 0 0;
-
 }
 
 .food_diner figcaption {
@@ -102,22 +102,19 @@
 //---tablettee 960px---
 
 @media all and (min-width: 960px) {
-    body {
-        width: 960px;
-    }
-
+   
     .food_diner {
-        width: 960px;
+        width: 100%;
         max-width: 960px;
-        height: 1000px;
-        margin: 0;
+        margin: -10px 0 0 0;
     }
 
     .food_diner_list {
-        width: 960px;
+        width: 100%;
         max-width: 960px;
         margin-left: 0;
         border-radius: 0;
+        gap: 50px;
     }
 
     .food_diner_list h2 {
@@ -131,41 +128,52 @@
     }
 
     .food_diner_list .food_diner_list_card_accueil {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        overflow: hidden;
         width: 95%;
         max-width: 960px;
-        height: 1600px;
-        margin: 20px 5px 5px 5px;
-        gap: 30px;
+        margin-left: 65px;
     }
 
     .food_diner figure,
     .food_diner figcaption,
     .food_diner img {
-        width: 420px;
-        max-width: 420px;
+        width: 800px;
+        max-width: 800px;
+    }
+
+    .new_text {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: large;
+        font-weight: bolder;
+        width: 150px;
+        height: 40px;
+        text-align-last: center;
+        padding-top: 15px;
+        background-color: $color-tertiaire-green;
+        opacity: 95%;
+    }
+    
+    .food_diner .new_text {
+        color: $color-tertiaire-bold-green;
+        font-size: 20px;
     }
 }
 
 //---desktop 1280px---
 
 @media all and (min-width: 1280px) {
-    body {
-        width: 1280px;
-    }
-
+ 
     .food_diner {
-        width: 1280px;
+        width: 100%;
         max-width: 1280px;
         height: 1000px;
         margin: 0;
     }
 
     .food_diner_list {
-        width: 1280px;
+        width: 100%;
         max-width: 1280px;
         margin-left: 0;
         border-radius: 0;
@@ -189,14 +197,36 @@
         width: 95%;
         max-width: 1280px;
         height: 1600px;
-        margin: 20px 5px 5px 5px;
-        gap: 30px;
+        margin: 10px 5px 5px 10px;
+        gap: 100px;
+        row-gap: 20px;
+        
     }
 
     .food_diner figure,
     .food_diner figcaption,
     .food_diner img {
-        width: 550px;
-        max-width: 550px;
+        width: 400px;
+        max-width: 400px;
+    }
+
+    .new_text {
+        position: absolute;
+        top: 10%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: large;
+        font-weight: bolder;
+        width: 100px;
+        height: 30px;
+        text-align-last: center;
+        padding-top: 10px;
+        background-color: $color-tertiaire-green;
+        opacity: 95%;
+    }
+    
+    .food_diner .new_text {
+        color: $color-tertiaire-bold-green;
+        font-size: 18px;
     }
 }

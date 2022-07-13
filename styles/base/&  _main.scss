@@ -1,0 +1,28 @@
+//dimensions standard desktop 1280px ; tablette 960px ; moble 481px    
+
+//mobile pour mon écran ce sera 500px) 
+
+
+* {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    justify-content: center;
+    font-family: $font-family-text;
+    width: 1550px;
+    margin-inline: auto;
+}
+
+button {
+    height: 65px;
+    border-radius: 50px 50px 50px 50px;
+    color: white;
+    font-size: large;
+    background: linear-gradient($color-secondary-pink, $color-primary-purple);
+    border: none;
+}
