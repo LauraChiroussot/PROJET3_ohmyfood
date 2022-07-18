@@ -23,6 +23,10 @@
     letter-spacing: 4px;
 }
 
+.restaurant_name .fa-heart{
+    cursor: initial;
+}
+
 .contenair_menu_card {
     display: flex;
     flex-direction: column;
@@ -86,31 +90,18 @@ button {
 //---tablette 960px---
 
 @media all and (min-width: 960px) {
-    /*.image_restaurant {
-        width: 100%;
-        height: 400px;
-    }*/
-
     .contenair_menu_card {
-        /*display: flex;*/
         flex-direction: row;
-        /*justify-content: center;*/
         margin-top: 0;
         height: 1760px;
-        /*border: 2px solid transparent;*/
         border-radius: 0;
-        /*background-color: $color-light-gray;*/
     }
 
     .contenair_menu_card_la_note_enchante {
-        /*display: flex;*/
         flex-direction: row;
-        /*justify-content: center;*/
         margin-top: 0;
         height: 1900px;
-        /*border: 2px solid transparent;*/
         border-radius: 0;
-        /*background-color: $color-light-gray;*/
     }
 
     .restaurant_name {
@@ -123,8 +114,6 @@ button {
 
     .contenair_menu_card figure,
     .contenair_menu_card_la_note_enchante figure {
-        /*display: flex;
-        flex-direction: column;*/
         justify-content: center;
         width: 700px;
         height: 100px;
@@ -170,24 +159,16 @@ button {
     }
 
     .restaurant_name {
-        /*display: flex;
-        align-items: baseline;*/
         margin: 60px 750px 30px 40px
     }
 
     .contenair_menu_card {
-        /*justify-content: center;*/
         margin-top: 40px;
         height: 830px;
-        /*border: 2px solid transparent;*/
         border-radius: 25px 25px 0 0;
-        /*background-color: $color-light-gray;*/
     }
 
     .contenair_menu_card_la_note_enchante {
-        /*display: flex;
-        flex-direction: row;
-        justify-content: center;*/
         overflow: hidden;
         margin-top: 40px;
         height: 980px;
@@ -220,16 +201,10 @@ button {
         align-content: flex-start;
         overflow: hidden;
         width: 95%;
-        /*margin: 10px 5px 5px 10px;
-        gap: 100px;
-        row-gap: 20px;*/
     }
 
     .contenair_menu_card figure,
     .contenair_menu_card_la_note_enchante figure {
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;*/
         overflow: hidden;
         width: 350px;
         height: 90px;
@@ -238,7 +213,6 @@ button {
 
     .contenair_menu_card h3,
     .contenair_menu_card_la_note_enchante h3 {
-        /*margin-left: 20px;*/
         font-size: 18px;
     }
 

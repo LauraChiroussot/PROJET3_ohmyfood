@@ -31,30 +31,62 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.contenair_menu_card p {
-  font-weight: bolder;
+/*.contenair_menu_card p{
+    font-weight: bolder;
+
+}*/
+.card-food-ingredients {
+  text-overflow: ellipsis;
 }
 
-/*.fa-check-circle{
-    flex: 0;
-    color: $color-white;
-    background-color: $color-tertiaire-green;
-    font-size: xx-large;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    white-space: nowrap;
-    border-top-right-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
-    transform: translateX(85px);
+.card-food-price {
+  font-weight: bold;
+}
+
+.choice_card_ok {
+  display: flex;
+  flex: 0%;
+  color: white;
+  background-color: #99e2d0;
+  font-size: xx-large;
+  text-align: center;
+  /*height: 165px;*/
+  line-height: 165px;
+  white-space: nowrap;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transform: translateX(80%);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+/*card:hover > .choice_card_ok{
+    flex : 25%;
+    transform: translateX(0px);
+    background-color: $color-tertiaire-bold-green;
     cursor: pointer;
-    transition: all 500ms;
+    color: $color-tertiaire-green
+}
+
+card:hover > .card_food{
+    flex: 75%;
+}
+
+.card:hover .fa-check-circle{
+    transform: rotate(0deg);
+}
+
+.fa-check-circle{
+    transform: rotate(359deg);
 }*/
 button {
-  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   border-radius: 50px 50px 50px 50px;
   color: white;
-  font-size: large;
+  font-size: medium;
   background: linear-gradient(#ff79da, #9356dc);
   border: none;
 }
@@ -91,21 +123,12 @@ button {
   font-size: 20px;
   background-color: rgb(241, 244, 244);
   box-shadow: 5px 5px 5px 10px rgb(234, 231, 231);
+  transition: 0.4s linear;
 }
-
-.choice1:hover {
-  background-color: rgb(227, 228, 250);
-  transition: 0.3s;
-}
-
-.choice2:hover {
-  background-color: rgb(227, 228, 250);
-  transition: 0.3s;
-}
-
+.choice1:hover,
+.choice2:hover,
 .choice3:hover {
   background-color: rgb(227, 228, 250);
-  transition: 0.4s;
 }
 
 .number {
@@ -146,8 +169,6 @@ button {
 
 @media all and (min-width: 960px) {
   .function {
-    display: flex;
-    width: 100%;
     height: 250px;
     background-color: rgb(241, 244, 244);
   }
@@ -170,69 +191,23 @@ button {
     width: 380px;
     height: 65px;
     gap: 5px;
-    border-left-style: none;
-    border-radius: 25px 25px 25px 25px;
-    font-weight: bold;
     font-size: 13px;
-    background-color: rgb(241, 244, 244);
-    box-shadow: 3px 3px 5px 5px rgb(234, 231, 231);
-  }
-  .choice1:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.3s;
-  }
-  .choice2:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.3s;
-  }
-  .choice3:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.4s;
   }
 }
 @media all and (min-width: 1280px) {
-  .function {
-    display: flex;
-    width: 100%;
-    height: 250px;
-  }
   .function h2 {
-    text-align: center;
-    font-size: 20px;
-    font-size: 40px;
     margin: 30px 0 45px 0;
     letter-spacing: 3px;
   }
   .function .function_choice {
-    flex-direction: row;
-    justify-content: center;
     width: 95%;
-    gap: 35px;
   }
   .choice1,
 .choice2,
 .choice3 {
-    width: 380px;
     height: 80px;
     gap: 8px;
-    border-left-style: none;
-    border-radius: 25px 25px 25px 25px;
-    font-weight: bold;
     font-size: 15px;
-    background-color: rgb(241, 244, 244);
-    box-shadow: 3px 3px 5px 5px rgb(234, 231, 231);
-  }
-  .choice1:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.3s;
-  }
-  .choice2:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.3s;
-  }
-  .choice3:hover {
-    background-color: rgb(227, 228, 250);
-    transition: 0.4s;
   }
 }
 /*---logo restaurant accueil---*/
@@ -278,9 +253,6 @@ button {
 
 @media all and (min-width: 960px) {
   .logo_header_welcom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     height: 150px;
     background-color: rgba(172, 169, 169, 0.88);
     margin: 0;
@@ -305,28 +277,8 @@ button {
   }
 }
 @media all and (min-width: 1280px) {
-  .logo_header_welcom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    background-color: rgba(172, 169, 169, 0.88);
-    margin: 0;
-  }
-  .logo_header_welcom img {
-    width: 700px;
-    height: 100px;
-    margin-top: 25px;
-    opacity: 50%;
-  }
   .fa-arrow-left {
     margin: 15px 0px 0px 250px;
-    font-size: 35px;
-  }
-  .logo_header_food img {
-    width: 300px;
-    height: 70px;
-    margin-right: 350px;
   }
 }
 .project-search {
@@ -379,28 +331,19 @@ button {
     height: 100%;
   }
   .project-search {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    padding-top: 20px;
     font-size: xx-large;
-    font-weight: bolder;
-    border-top: 4px solid rgb(172, 169, 169);
     border-bottom: 4px solid rgb(241, 244, 244);
   }
   .invit p {
     padding: 0px 50px 10px 50px;
   }
   .invit {
-    width: 100%;
     height: 300px;
     font-size: 20px;
-    background-color: rgb(241, 244, 244);
   }
   .invit button {
     width: 250px;
-    height: 70px;
+    height: 60px;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -409,37 +352,15 @@ button {
   }
 }
 @media all and (min-width: 1280px) {
-  .formulaire_accueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #ff79da;
-  }
   .project-search {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
     padding-top: 10px;
-    font-size: xx-large;
-    font-weight: bolder;
-    border-top: 4px solid rgb(172, 169, 169);
-    background-color: rgb(234, 231, 231);
-  }
-  .invit p {
-    padding: 0px 50px 10px 50px;
   }
   .invit {
-    width: 100%;
-    height: 300px;
     font-size: 30px;
-    background-color: rgb(241, 244, 244);
   }
   .invit button {
     width: 350px;
-    height: 100px;
+    height: 80px;
     font-size: large;
     font-weight: 900;
     letter-spacing: 2px;
@@ -514,11 +435,18 @@ button {
 
 .fa-heart {
   font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.6s linear;
+  color: transparent;
+  text-shadow: 0 0 0 black;
 }
 
 .food_diner_list .fa-heart:hover {
-  transition: 0.5s;
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(to left, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  font-weight: bold;
+  text-shadow: unset;
 }
 
 .la_palette_du_gout,
@@ -561,7 +489,7 @@ button {
     justify-content: center;
     font-size: 50px;
     letter-spacing: 4px;
-    background-color: rgb(227, 228, 250);
+    background-color: #99e2d0;
     border-radius: 12px;
     color: rgb(60, 58, 58);
   }
@@ -570,21 +498,13 @@ button {
     margin-left: 65px;
   }
   .new_text {
-    position: absolute;
-    top: 20%;
     left: 80%;
-    transform: translate(-50%, -50%);
-    font-size: large;
-    font-weight: bolder;
     width: 150px;
     height: 40px;
-    text-align-last: center;
     padding-top: 15px;
-    background-color: #99e2d0;
     opacity: 95%;
   }
   .food_diner .new_text {
-    color: green;
     font-size: 20px;
   }
 }
@@ -598,15 +518,6 @@ button {
     width: 100%;
     margin-left: 0;
     border-radius: 0;
-  }
-  .food_diner_list h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    letter-spacing: 4px;
-    background-color: rgb(227, 228, 250);
-    border-radius: 12px;
-    color: rgb(60, 58, 58);
   }
   .food_diner_list .food_diner_list_card_accueil {
     display: flex;
@@ -625,21 +536,12 @@ button {
     width: 400px;
   }
   .new_text {
-    position: absolute;
     top: 10%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    font-size: large;
-    font-weight: bolder;
     width: 100px;
     height: 30px;
-    text-align-last: center;
     padding-top: 10px;
-    background-color: #99e2d0;
-    opacity: 95%;
   }
   .food_diner .new_text {
-    color: green;
     font-size: 18px;
   }
 }
@@ -662,8 +564,12 @@ button {
 }
 
 .restaurant_name h1 {
-  font-size: 600;
+  font-size: 25px;
   letter-spacing: 4px;
+}
+
+.restaurant_name .fa-heart {
+  cursor: initial;
 }
 
 .contenair_menu_card {
@@ -727,32 +633,17 @@ button {
 }
 
 @media all and (min-width: 960px) {
-  .image_restaurant {
-    /*display: flex;
-    flex-direction: column;
-    overflow: hidden;*/
-    width: 100%;
-    height: 400px;
-  }
   .contenair_menu_card {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 0;
     height: 1760px;
-    border: 2px solid transparent;
     border-radius: 0;
-    background-color: rgb(241, 244, 244);
   }
   .contenair_menu_card_la_note_enchante {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-top: 0;
     height: 1900px;
-    border: 2px solid transparent;
     border-radius: 0;
-    background-color: rgb(241, 244, 244);
   }
   .restaurant_name {
     margin: 30px 50px 0 20px;
@@ -762,8 +653,6 @@ button {
   }
   .contenair_menu_card figure,
 .contenair_menu_card_la_note_enchante figure {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 700px;
     height: 100px;
@@ -796,28 +685,19 @@ button {
   .image_restaurant {
     justify-content: center;
     width: 96%;
-    box-shadow: 5px 5px 5px 35px rgb(227, 228, 250);
-    border-radius: 30px;
+    border: 20px solid #99e2d0;
+    border-radius: 25px;
     height: 350px;
-    margin-left: 30px;
   }
   .restaurant_name {
-    display: flex;
-    align-items: baseline;
     margin: 60px 750px 30px 40px;
   }
   .contenair_menu_card {
-    justify-content: center;
     margin-top: 40px;
     height: 830px;
-    border: 2px solid transparent;
     border-radius: 25px 25px 0 0;
-    background-color: rgb(241, 244, 244);
   }
   .contenair_menu_card_la_note_enchante {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     overflow: hidden;
     margin-top: 40px;
     height: 980px;
@@ -847,15 +727,9 @@ button {
     align-content: flex-start;
     overflow: hidden;
     width: 95%;
-    /*margin: 10px 5px 5px 10px;
-    gap: 100px;
-    row-gap: 20px;*/
   }
   .contenair_menu_card figure,
 .contenair_menu_card_la_note_enchante figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     overflow: hidden;
     width: 350px;
     height: 90px;
@@ -863,7 +737,6 @@ button {
   }
   .contenair_menu_card h3,
 .contenair_menu_card_la_note_enchante h3 {
-    margin-left: 20px;
     font-size: 18px;
   }
   .contenair_menu_card p,
@@ -920,16 +793,13 @@ button {
 
 @media all and (min-width: 960px) {
   .footer_welcom {
-    width: 100%;
     height: 150px;
-    background-color: rgb(60, 58, 58);
   }
   .footer_welcom h3 {
     display: flex;
     justify-content: center;
     font-weight: 400;
     font-size: 23px;
-    color: white;
     letter-spacing: 4px;
     margin-bottom: 10px;
     padding: 20px 0 20px 0;
@@ -949,32 +819,18 @@ button {
   }
 }
 @media all and (min-width: 1280px) {
-  .footer_welcom {
-    width: 100%;
-    height: 150px;
-    background-color: rgb(60, 58, 58);
-  }
   .footer_welcom h3 {
-    display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: x-large;
-    color: white;
     letter-spacing: 4px;
     margin-bottom: 10px;
   }
   .footer_redirecting {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     font-size: large;
   }
   .footer_redirecting li {
-    display: flex;
-    justify-content: center;
     width: 250px;
     max-width: 250px;
-    height: 50px;
   }
 }
 
