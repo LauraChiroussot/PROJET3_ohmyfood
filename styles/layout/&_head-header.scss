@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 500px;
     height: 50px;
     margin: 40px 0 40px 0;
 }
@@ -19,8 +18,7 @@
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    width: 100%;
-    max-width: 480px;
+    width: 95%;
     margin: 30px 30px 30px 20px;
 }
 
@@ -49,10 +47,9 @@
 
 @media all and (min-width: 960px) {
     .logo_header_welcom {
-        display: flex;
+       /* display: flex;
         justify-content: center;
-        width: 100%;
-        max-width: 960px;
+        width: 100%;*/
         height: 150px;
         background-color: rgb(172 169 169 / 88%);
         margin: 0;
@@ -68,8 +65,6 @@
     //---restautant food--
 
     .logo_header_food {
-        width: 100%;
-        max-width: 940px;
         height: 100px;
     }
 
@@ -90,39 +85,32 @@
 //---restanrant accueil---
 
 @media all and (min-width: 1280px) {
-    .logo_header_welcom {
+    /*.logo_header_welcom {
         display: flex;
         justify-content: center;
         width: 100%;
-        max-width: 1280px;
         height: 150px;
         background-color: rgb(172 169 169 / 88%);
         margin: 0;
-    }
+    }*/
 
-    .logo_header_welcom img {
+    /*.logo_header_welcom img {
         width: 700px;
         height: 100px;
         margin-top: 25px;
         opacity: 50%;
-    }
+    }*/
 
-    //---restautant food--
-
-    .logo_header_food {
-        width: 100%;
-        max-width: 1260px;
-        height: 100px;
-    }
+//---restaurants food---
 
     .fa-arrow-left {
         margin: 15px 0px 0px 250px;
-        font-size: 35px;
+        /*font-size: 35px;*/
     }
 
-    .logo_header_food img {
+    /*.logo_header_food img {
         width: 300px;
         height: 70px;
         margin-right: 350px;
-    }
+    }*/
 }
