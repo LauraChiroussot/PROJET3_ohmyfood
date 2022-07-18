@@ -12,6 +12,7 @@
 }
 
 body {
+  margin-inline: auto;
   justify-content: center;
   font-family: Roboto, sans-serif;
 }
@@ -519,10 +520,15 @@ h1 {
 
 .fa-heart {
   font-size: 30px;
+  transition: 0.5s;
+  font-weight: 800;
 }
 
 .food_diner_list .fa-heart:hover {
-  transition: 0.5s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
   background: linear-gradient(#9356dc, #ff79da);
 }
 
