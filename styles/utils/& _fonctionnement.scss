@@ -13,7 +13,7 @@
     flex-direction: column;
     margin-left: 20px;
     width: 95%;
-    gap: 40px;
+    gap: 20px;
 }
 
 .choice1,
@@ -21,15 +21,19 @@
 .choice3 {
     display: flex;
     align-items: center;
-    width: 90%;
-    height: 100px;
+    /*width: 270px;*/
+    width: 96%;
+    height: 60px;
     gap: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
     border-left-style: none;
     border-radius: 25px 25px 25px 25px;
     font-weight: bold;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    /*font-size: 1.1em;*/
     background-color: $color-light-gray;
-    box-shadow: 5px 5px 5px 10px $color-medium-gray;
+    box-shadow: -1px 3px 2px 6px $color-clear-gray;
     transition: 0.4s linear;
 
     &:hover {
@@ -43,35 +47,23 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-left: -10px;
-    width: 40px;
-    height: 40px;
+    margin-left: -14px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
     background-color: $color-primary-purple;
     color: white;
 }
 
-.fa-mobile-alt {
-    display: flex;
-    justify-content: center;
-    color: $color-icon-gray;
-    font-size: 40px;
-    padding: 0 30px 0 30px;
-}
-
+.fa-mobile-alt,
 .fa-list-ul {
-    display: flex;
-    justify-content: center;
     color: $color-icon-gray;
-    font-size: 30px;
-    padding: 0 30px 0 30px;
+    font-size: 1.5em;
 }
 
 .fa-store {
-    display: flex;
-    justify-content: center;
     color: $color-primary-purple;
-    font-size: 30px;
-    padding: 0 30px 0 30px;
+    font-size: 1.5em;
 }
 
 //---tablette 960px---
@@ -79,7 +71,6 @@
 @media all and (min-width: 960px) {
     .function {
         height: 250px;
-        background-color: $color-light-gray;
     }
 
     .function h2 {

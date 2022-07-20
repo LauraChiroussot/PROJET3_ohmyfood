@@ -31,10 +31,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -120px;
-    height: 1550px;
+    /*margin-top: -151px;*/
+    margin-top: -222px;
+    height: 1580px;
     border: 2px solid transparent;
-    border-radius: 55px 55px 0 0;
+    border-radius: 30px 30px 0 0;
     background-color: $color-light-gray;
     z-index: 1;
     position: relative;
@@ -44,10 +45,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -120px;
-    height: 1650px;
+    margin-top: -191px;
+    height: 1680px;
     border: 2px solid transparent;
-    border-radius: 55px 55px 0 0;
+    border-radius: 30px 30px 0 0;
     background-color: $color-light-gray;
     z-index: 1;
     position: relative;
@@ -84,7 +85,8 @@
 
 button {
     width: 220px;
-    margin: 40px 0px 40px 120px;
+    margin-inline: auto;
+    margin-top: 25px;
 }
 
 //---tablette 960px---
@@ -143,7 +145,6 @@ button {
         font-weight: 900;
         letter-spacing: 3px;
         opacity: 80%;
-        margin: 40px 0px 40px 185px;
     }
 }
 
@@ -228,6 +229,5 @@ button {
         font-weight: 900;
         letter-spacing: 3px;
         opacity: 80%;
-        margin: 60px 0px 40px 440px;
     }
 }
