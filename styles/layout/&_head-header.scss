@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 13px;
     position: relative;
     box-shadow: 2px 18px 13px -24px $color-icon-gray;
     z-index: 10;
 }
 
 .logo_header_welcom img {
-    width: 188px;
+    width: 177px;
 }
 
 /*---logo restaurants food---*/
@@ -25,12 +25,12 @@
 }
 
 .fa-arrow-left {
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
 .logo_header_food img {
-    width: 55%;
+    width: 39%;
     margin-inline: auto;
 }
 

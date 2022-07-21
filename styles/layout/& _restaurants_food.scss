@@ -14,26 +14,40 @@
 .restaurant_name {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin: 20px 50px 0 20px;
+    margin-inline: auto;
+    padding: 20px;
 }
 
 .restaurant_name h1 {
-    font-size: 25px;
-    letter-spacing: 4px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
 }
 
-.restaurant_name .fa-heart{
-    cursor: initial;
+.restaurant_name .fa-heart {
+    font-size: 21px;
+    font-weight: 400;
+    transition: 0.6s linear;
+    color: transparent;
+    text-shadow: 0 0 0 black;
 }
+
+.restaurant_name .fa-heart:hover {
+    background: linear-gradient(to left, $color-primary-purple, $color-secondary-pink);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    text-shadow: unset;
+}
+
+/*.restaurant_name .fa-heart {
+    cursor: initial;
+}*/
 
 .contenair_menu_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-top: -151px;*/
-    margin-top: -222px;
-    height: 1580px;
+    margin-top: -237px;
+    padding: 12px 0 60px 0;
     border: 2px solid transparent;
     border-radius: 30px 30px 0 0;
     background-color: $color-light-gray;
@@ -45,8 +59,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -191px;
-    height: 1680px;
+    margin-top: -135px;
+    padding: 12px 0 60px 0;
     border: 2px solid transparent;
     border-radius: 30px 30px 0 0;
     background-color: $color-light-gray;
@@ -69,10 +83,12 @@
 
 .contenair_menu_card h2,
 .contenair_menu_card_la_note_enchante h2 {
-    margin: 40px 20px 0 20px;
+    margin: 13px 0 -3px 20px;
     border-bottom: 4px solid $color-tertiaire-green;
-    padding-bottom: 10px;
-    width: 12%;
+    padding-bottom: 4px;
+    width: 51px;
+    color: $color-black-light;
+    font-size: 20px;
 }
 
 .contenair_menu_card .menu_price,
@@ -112,6 +128,10 @@ button {
 
     .restaurant_name h1 {
         font-size: xx-large;
+    }
+
+    .restaurant_name .fa-heart {
+        font-size: 30px;
     }
 
     .contenair_menu_card figure,
@@ -161,6 +181,11 @@ button {
 
     .restaurant_name {
         margin: 60px 750px 30px 40px
+    }
+
+    .restaurant_name .fa-heart {
+        font-size: 30px;
+
     }
 
     .contenair_menu_card {
