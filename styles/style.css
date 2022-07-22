@@ -78,9 +78,10 @@ body {
   white-space: nowrap;
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
-  transform: translateX(80%);
+  /*transform: translateX(10%);*/
   cursor: pointer;
   transition: all 500ms;
+  margin-left: 200px;
 }
 
 /*card:hover > .choice_card_ok{
@@ -231,7 +232,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /*width: 100%;*/
   padding: 20px 13px;
   position: relative;
   box-shadow: 2px 18px 13px -24px rgb(134, 133, 133);
@@ -286,9 +287,9 @@ button {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 40px;
-  padding-top: 20px;
-  font-size: 17px;
+  height: 60px;
+  padding-top: 25px;
+  font-size: 25px;
   font-weight: 600;
   background-color: hsl(240deg, 6%, 90%);
 }
@@ -313,8 +314,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-inline: auto;
-  width: 100%;
-  /*height: 350px;*/
+  height: 200px;
   padding: 40px 0;
   font-size: 0.8em;
   text-align: center;
@@ -332,10 +332,11 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
   }
   .invit {
+    width: 100%;
     font-size: 1.2rem;
   }
   .invit h2 {
@@ -352,28 +353,30 @@ button {
 }
 @media all and (min-width: 1280px) {
   .project-search {
-    padding-top: 10px;
+    letter-spacing: 0.2em;
   }
   .invit {
+    width: 100%;
     font-size: 1.5rem;
   }
   .invit h2 {
     font-size: 40px;
   }
   .invit button {
-    width: 350px;
-    height: 80px;
-    font-size: large;
+    width: 310px;
+    height: 60px;
+    font-size: 17px;
     font-weight: 900;
     letter-spacing: 2px;
     opacity: 80%;
+    margin-top: 20px;
   }
 }
 .food_diner {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  /*width: 100%;*/
   height: 1750px;
   margin-top: 65px;
   background-color: rgb(241, 244, 244);
@@ -385,7 +388,7 @@ button {
   justify-content: center;
   margin-left: 20px;
   overflow: hidden;
-  width: 95%;
+  /*width: 95%;*/
   gap: 20px;
 }
 
@@ -398,7 +401,7 @@ button {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  width: 95%;
+  /*width: 95%;*/
   margin: 0 0 20px 0;
   border-radius: 25px 25px 25px 25px;
 }
@@ -406,7 +409,7 @@ button {
 .food_diner img {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  /*width: 100%;*/
   height: 280px;
 }
 
@@ -418,7 +421,7 @@ button {
 }
 
 .food_diner figcaption {
-  width: 100%;
+  /*width: 100%;*/
   background-color: white;
 }
 
@@ -458,7 +461,7 @@ button {
 .new_text {
   position: absolute;
   top: 10%;
-  left: 80%;
+  left: 74%;
   transform: translate(-50%, -50%);
   font-size: large;
   font-weight: bolder;
@@ -475,11 +478,11 @@ button {
 
 @media all and (min-width: 960px) {
   .food_diner {
-    width: 100%;
+    /*width: 100%;*/
     margin: -10px 0 0 0;
   }
   .food_diner_list {
-    width: 100%;
+    /*width: 100%;*/
     margin-left: 0;
     border-radius: 0;
     gap: 50px;
@@ -493,7 +496,7 @@ button {
     color: rgb(60, 58, 58);
   }
   .food_diner_list .food_diner_list_card_accueil {
-    width: 95%;
+    /*width: 95%;*/
     margin-left: 65px;
   }
   .new_text {
@@ -509,12 +512,12 @@ button {
 }
 @media all and (min-width: 1280px) {
   .food_diner {
-    width: 100%;
+    /*width: 100%;*/
     height: 1000px;
     margin: 0;
   }
   .food_diner_list {
-    width: 100%;
+    /* width: 100%;*/
     margin-left: 0;
     border-radius: 0;
   }
@@ -523,7 +526,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-    width: 100%;
+    /* width: 100%;*/
     height: 1600px;
     margin: 10px 5px 5px 10px;
     gap: 100px;
@@ -557,19 +560,21 @@ button {
 /*---menus restaurants---*/
 .restaurant_name {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   margin-inline: auto;
-  padding: 20px;
+  padding: 15px 0 25px 0;
 }
 
 .restaurant_name h1 {
-  font-size: 18px;
-  letter-spacing: 1.5px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
 }
 
 .restaurant_name .fa-heart {
   font-size: 21px;
   font-weight: 400;
+  padding: 0 0 0 23px;
   transition: 0.6s linear;
   color: transparent;
   text-shadow: 0 0 0 black;
@@ -585,6 +590,14 @@ button {
 /*.restaurant_name .fa-heart {
     cursor: initial;
 }*/
+.list_menu_food,
+.list_menu_food_la_note_enchantee {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .contenair_menu_card {
   display: flex;
   flex-direction: column;
@@ -615,10 +628,11 @@ button {
 .contenair_menu_card_la_note_enchante figure {
   display: flex;
   flex-direction: column;
-  width: 92%;
-  height: 75px;
-  margin: 20px 10px 20px 10px;
-  padding: 15px 0 0 10px;
+  justify-content: center;
+  justify-items: center;
+  width: 267px;
+  margin: 20px 0 9px 10px;
+  padding: 10px 7px 0 10px;
   border: 2px solid transparent;
   border-radius: 20px;
   background-color: white;
@@ -634,12 +648,18 @@ button {
   font-size: 20px;
 }
 
+.contenair_menu_card h3,
+.contenair_menu_card_la_note_enchante h3 {
+  font-size: medium;
+}
+
 .contenair_menu_card .menu_price,
 .contenair_menu_card_la_note_enchante .menu_price {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 10px 50px 0 0;
+  margin: 7px 5px 10px 0;
+  font-size: 12px;
 }
 
 button {
@@ -652,17 +672,16 @@ button {
   .contenair_menu_card {
     flex-direction: row;
     margin-top: 0;
-    height: 1760px;
     border-radius: 0;
   }
   .contenair_menu_card_la_note_enchante {
     flex-direction: row;
     margin-top: 0;
-    height: 1900px;
     border-radius: 0;
   }
   .restaurant_name {
-    margin: 30px 50px 0 20px;
+    justify-content: space-between;
+    margin: 0;
   }
   .restaurant_name h1 {
     font-size: xx-large;
@@ -687,12 +706,13 @@ button {
   }
   .contenair_menu_card .menu_price,
 .contenair_menu_card_la_note_enchante .menu_price {
-    margin: 10px 80px 0px 20px;
+    margin: 10px 10px 0px 20px;
     font-size: large;
   }
   button {
     width: 350px;
     height: 80px;
+    margin-top: 50px;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 3px;
@@ -708,20 +728,38 @@ button {
     height: 350px;
   }
   .restaurant_name {
-    margin: 60px 750px 30px 40px;
+    display: flex;
+    align-items: center;
+    margin: 60px 750px 55px 40px;
+    padding: 0;
   }
   .restaurant_name .fa-heart {
     font-size: 30px;
   }
+  .list_menu_food {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 460px;
+  }
+  .list_menu_food_la_note_enchantee {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 528px;
+  }
   .contenair_menu_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
-    height: 830px;
     border-radius: 25px 25px 0 0;
   }
   .contenair_menu_card_la_note_enchante {
     overflow: hidden;
     margin-top: 40px;
-    height: 980px;
     border: 2px solid transparent;
     border-radius: 15px 15px 0 0;
     background-color: rgb(241, 244, 244);
@@ -730,18 +768,12 @@ button {
 .contenair_menu_card_la_note_enchante h2 {
     width: 80%;
   }
-  .list_menu_food_la_note_enchantee,
-.list_menu_food {
-    display: flex;
-    overflow: hidden;
-    width: 95%;
-  }
-  .list_menu_food_entrees_la_note_enchantee,
-.list_menu_food_entrees,
-.list_menu_food_plats_la_note_enchantee,
-.list_menu_food_plats,
-.list_menu_food_desserts_la_note_enchantee,
-.list_menu_food_dessert {
+  /*.list_menu_food_la_note_enchantee,
+  .list_menu_food {
+      display: flex;
+      overflow: hidden;
+  }*/
+  .list_menu_food_entrees_la_note_enchantee .list_menu_food_entrees .list_menu_food_plats_la_note_enchantee .list_menu_food_plats .list_menu_food_desserts_la_note_enchantee .list_menu_food_dessert {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -767,6 +799,16 @@ button {
   button {
     width: 400px;
     height: 80px;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    opacity: 80%;
+  }
+  .button_la_note_enchantee {
+    width: 400px;
+    height: 80px;
+    margin-top: 55px;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 3px;

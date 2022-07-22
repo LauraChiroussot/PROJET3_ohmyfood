@@ -13,19 +13,21 @@
 
 .restaurant_name {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-inline: auto;
-    padding: 20px;
+    padding: 15px 0 25px 0;
 }
 
 .restaurant_name h1 {
-    font-size: 18px;
-    letter-spacing: 1.5px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 .restaurant_name .fa-heart {
     font-size: 21px;
     font-weight: 400;
+    padding: 0 0 0 23px;
     transition: 0.6s linear;
     color: transparent;
     text-shadow: 0 0 0 black;
@@ -41,6 +43,14 @@
 /*.restaurant_name .fa-heart {
     cursor: initial;
 }*/
+
+.list_menu_food,
+.list_menu_food_la_note_enchantee {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
 
 .contenair_menu_card {
     display: flex;
@@ -72,10 +82,11 @@
 .contenair_menu_card_la_note_enchante figure {
     display: flex;
     flex-direction: column;
-    width: 92%;
-    height: 75px;
-    margin: 20px 10px 20px 10px;
-    padding: 15px 0 0 10px;
+    justify-content: center;
+    justify-items: center;
+    width: 267px;
+    margin: 20px 0 9px 10px;
+    padding: 10px 7px 0 10px;
     border: 2px solid transparent;
     border-radius: 20px;
     background-color: $color-white;
@@ -91,12 +102,18 @@
     font-size: 20px;
 }
 
+.contenair_menu_card h3,
+.contenair_menu_card_la_note_enchante h3 {
+    font-size: medium;
+}
+
 .contenair_menu_card .menu_price,
 .contenair_menu_card_la_note_enchante .menu_price {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 10px 50px 0 0;
+    margin: 7px 5px 10px 0;
+    font-size: 12px;
 }
 
 button {
@@ -111,19 +128,18 @@ button {
     .contenair_menu_card {
         flex-direction: row;
         margin-top: 0;
-        height: 1760px;
         border-radius: 0;
     }
 
     .contenair_menu_card_la_note_enchante {
         flex-direction: row;
         margin-top: 0;
-        height: 1900px;
         border-radius: 0;
     }
 
     .restaurant_name {
-        margin: 30px 50px 0 20px;
+        justify-content: space-between;
+        margin: 0;
     }
 
     .restaurant_name h1 {
@@ -154,13 +170,14 @@ button {
 
     .contenair_menu_card .menu_price,
     .contenair_menu_card_la_note_enchante .menu_price {
-        margin: 10px 80px 0px 20px;
+        margin: 10px 10px 0px 20px;
         font-size: large;
     }
 
     button {
         width: 350px;
         height: 80px;
+        margin-top: 50px;
         font-size: 20px;
         font-weight: 900;
         letter-spacing: 3px;
@@ -180,24 +197,43 @@ button {
     }
 
     .restaurant_name {
-        margin: 60px 750px 30px 40px
+        display: flex;
+        align-items: center;
+        margin: 60px 750px 55px 40px;
+        padding: 0;
     }
 
     .restaurant_name .fa-heart {
         font-size: 30px;
+    }
 
+    .list_menu_food {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 460px;
+    }
+
+    .list_menu_food_la_note_enchantee {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 528px;
     }
 
     .contenair_menu_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 40px;
-        height: 830px;
         border-radius: 25px 25px 0 0;
     }
 
     .contenair_menu_card_la_note_enchante {
         overflow: hidden;
         margin-top: 40px;
-        height: 980px;
         border: 2px solid transparent;
         border-radius: 15px 15px 0 0;
         background-color: $color-light-gray;
@@ -208,19 +244,13 @@ button {
         width: 80%;
     }
 
-    .list_menu_food_la_note_enchantee,
+    /*.list_menu_food_la_note_enchantee,
     .list_menu_food {
         display: flex;
         overflow: hidden;
-        width: 95%;
-    }
+    }*/
 
-    .list_menu_food_entrees_la_note_enchantee,
-    .list_menu_food_entrees,
-    .list_menu_food_plats_la_note_enchantee,
-    .list_menu_food_plats,
-    .list_menu_food_desserts_la_note_enchantee,
-    .list_menu_food_dessert {
+    .list_menu_food_entrees_la_note_enchantee .list_menu_food_entrees .list_menu_food_plats_la_note_enchantee .list_menu_food_plats .list_menu_food_desserts_la_note_enchantee .list_menu_food_dessert {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -250,6 +280,17 @@ button {
     button {
         width: 400px;
         height: 80px;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        opacity: 80%;
+    }
+
+    .button_la_note_enchantee {
+        width: 400px;
+        height: 80px;
+        margin-top: 55px;
         font-size: 20px;
         font-weight: 900;
         letter-spacing: 3px;

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
     height: 1750px;
     margin-top: 65px;
     background-color: $color-light-gray;
@@ -14,7 +14,7 @@
     justify-content: center;
     margin-left: 20px;
     overflow: hidden;
-    width: 95%;
+    /*width: 95%;*/
     gap: 20px;
 }
 
@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    width: 95%;
+    /*width: 95%;*/
     margin: 0 0 20px 0;
     border-radius: 25px 25px 25px 25px;
 }
@@ -35,7 +35,7 @@
 .food_diner img {
     display: flex;
     overflow: hidden;
-    width: 100%;
+    /*width: 100%;*/
     height: 280px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .food_diner figcaption {
-    width: 100%;
+    /*width: 100%;*/
     background-color: $color-white;
 }
 
@@ -88,7 +88,7 @@
 .new_text {
     position: absolute;
     top: 10%;
-    left: 80%;
+    left: 74%;
     transform: translate(-50%, -50%);
     font-size: large;
     font-weight: bolder;
@@ -108,12 +108,12 @@
 @media all and (min-width: 960px) {
 
     .food_diner {
-        width: 100%;
+        /*width: 100%;*/
         margin: -10px 0 0 0;
     }
 
     .food_diner_list {
-        width: 100%;
+        /*width: 100%;*/
         margin-left: 0;
         border-radius: 0;
         gap: 50px;
@@ -129,7 +129,7 @@
     }
 
     .food_diner_list .food_diner_list_card_accueil {
-        width: 95%;
+        /*width: 95%;*/
         margin-left: 65px;
     }
 
@@ -151,13 +151,13 @@
 @media all and (min-width: 1280px) {
 
     .food_diner {
-        width: 100%;
+        /*width: 100%;*/
         height: 1000px;
         margin: 0;
     }
 
     .food_diner_list {
-        width: 100%;
+        /* width: 100%;*/
         margin-left: 0;
         border-radius: 0;
     }
@@ -167,7 +167,7 @@
         flex-wrap: wrap;
         justify-content: center;
         overflow: hidden;
-        width: 100%;
+        /* width: 100%;*/
         height: 1600px;
         margin: 10px 5px 5px 10px;
         gap: 100px;
